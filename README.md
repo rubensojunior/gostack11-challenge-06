@@ -50,8 +50,8 @@ Esta aplicação se conecta com outra aplicação minha que está disponível em
 
 ### Telas
 
-![Imagem1](repo/imgs/gofinances.png)
-![Imagem2](repo/imgs/gofinances-2.png)
+![Imagem1](repo/imgs/gofinances.PNG)
+![Imagem2](repo/imgs/gofinances-2.PNG)
 
 ### Layout da aplicação
 
