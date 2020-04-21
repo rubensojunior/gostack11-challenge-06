@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
+import { FiUpload } from 'react-icons/fi'
 
 import { Container } from './styles'
 
@@ -13,11 +14,14 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
   <Container size={size}>
     <header>
-      <img src={Logo} alt="GoFinances" />
+      <Link to="/">
+        <img src={Logo} alt="GoFinances" />
+      </Link>
       <nav>
-        {
-          // Todo
-        }
+        <Link to="/import">
+          <FiUpload size={20} />
+          Importar Transações
+        </Link>
       </nav>
     </header>
   </Container>

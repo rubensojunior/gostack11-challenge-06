@@ -18,6 +18,9 @@ export const Container = styled.div<ContainerProps>`
 
     nav {
       a {
+        display: flex;
+        align-items: center;
+
         color: #fff;
         text-decoration: none;
         font-size: 16px;
@@ -29,6 +32,10 @@ export const Container = styled.div<ContainerProps>`
 
         &:hover {
           opacity: 0.6;
+        }
+
+        svg {
+          margin-right: 4px;
         }
       }
     }
