@@ -1,7 +1,11 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface ContainerProps {
   size?: 'small' | 'large'
+}
+
+interface ActiveIndicatorProps {
+  isActive: boolean
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -17,10 +21,9 @@ export const Container = styled.div<ContainerProps>`
     justify-content: space-between;
 
     nav {
-      a {
-        display: flex;
-        align-items: center;
+      display: flex;
 
+      a {
         color: #fff;
         text-decoration: none;
         font-size: 16px;
@@ -33,11 +36,19 @@ export const Container = styled.div<ContainerProps>`
         &:hover {
           opacity: 0.6;
         }
-
-        svg {
-          margin-right: 4px;
-        }
       }
     }
   }
+`
+
+export const ActiveIndicator = styled.div<ActiveIndicatorProps>`
+  height: 2px;
+  width: 73px;
+  margin-top: 10px;
+
+  ${props =>
+    props.isActive &&
+    css`
+      background: #ff872c;
+    `}
 `
