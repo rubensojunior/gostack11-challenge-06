@@ -1,70 +1,67 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
-<h3 align="center">
-  Desafio 06: GoFinances Web
-</h3>
+<h1 align="center">
+<br>
+Rocketseat - GoStack 11 - Challenge 06
+</h1>
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+This project was created to solve a challenge requested by Rocketseat.
+Gostack is immersive training in technologies, react and react natively.</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
 </p>
 
-## :rocket: Sobre o desafio
+<div>
+  <img src="repo/imgs/image1.png" alt="demo" height="425">
+  <img src="repo/imgs/image2.png" alt="demo" height="425">
+</div>
 
-Nesse desafio, você deve continuar desenvolvendo a aplicação de gestão de transações, a GoFinances. Agora você irá praticar o que você aprendeu até agora no React.js junto com TypeScript, utilizando rotas e envio de arquivos por formulário.
+<hr />
 
-Essa será uma aplicação que irá se conectar ao seu backend do [Desafio 06](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-database-upload), e exibir as transações criadas e permitir a importação de um arquivo CSV para gerar novos registros no banco de dados.
+## API
 
-### Back-end
+This project connects with API available in [here](https://github.com/rubensojunior/gostack11-desafio-05)
 
-Esta aplicação se conecta com outra aplicação minha que está disponível em
-[back-end](https://github.com/rubensojunior/gostack11-desafio-05)
+## Layout
 
-### Tecnologias
+This application has a layout that you can follow to be able to visualize its operation.
 
-- ReactJS
-- Typescript
-- axios
-- Styled Components
-- react-router-dom
-- react-icons
-- date-fns
-- polished
+The layout can be accessed through the Figma page, at [here](https://www.figma.com/file/EgOhyj1Inz14dhWGVhRlhr/GoFinances?node-id=1%3A863).
 
-### Telas
+## Features
 
-![Imagem1](repo/imgs/gofinances.PNG)
+- ⚛️ **React Js** — A JavaScript library for building user interfaces
 
-![Imagem2](repo/imgs/gofinances-2.PNG)
+- **`List your API repositories`**: Your `Dashboard` page should be able to display a listing through a table, with the `title`, `value`, `type` and `category` field of all transactions that are registered in your API.
 
-### Layout da aplicação
+- **`Display the balance of your API`**: On your `Dashboard` page, you must display the balance that is returned from your backend, containing the grand total, together with the total of entries and exits.
 
-Essa aplicação possui um layout que você pode seguir para conseguir visualizar o seu funcionamento.
+- **`Import CSV` files**: On your `Import` page, you must allow sending a file in `csv` format to your backend, which will import transactions into your database. The csv file must follow the following [template](https://github.com/Rocketseat/bootcamp-gostack-desafios/blob/master/desafio-database-upload/assets/file.csv).
 
-O layout pode ser acessado através da página do Figma, no [seguinte link](https://www.figma.com/file/EgOhyj1Inz14dhWGVhRlhr/GoFinances?node-id=1%3A863).
+### Tests
 
-### Funcionalidades da aplicação
+- **`should be able to list the total balance inside the cards`**
 
-- **`Listar os repositórios da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem através de uma tabela, com o campo `title`, `value`, `type` e `category` de todas as transações que estão cadastradas na sua API.
+* **`should be able to list the transactions`**
 
-- **`Exibir o balance da sua API`**: Sua página `Dashboard`, você deve exibir o balance que é retornado do seu backend, contendo o total geral, junto ao total de entradas e saídas.
+- **`should be able to navigate to the import page`**
 
-- **`Importar arquivos CSV`**: Na sua página `Import`, você deve permitir o envio de um arquivo no formato `csv` para o seu backend, que irá fazer a importação das transações para o seu banco de dados. O arquivo csv deve seguir o seguinte [modelo](https://github.com/Rocketseat/bootcamp-gostack-desafios/blob/master/desafio-database-upload/assets/file.csv).
+- **`should be able to upload a file`**
 
-### Específicação dos testes
+## Getting started
 
-- **`should be able to list the total balance inside the cards`**: Para que esse teste passe, sua aplicação deve permitir que seja exibido na sua Dashboard, cards contendo o total de `income`, `outcome` e o total da subtração de `income - outcome` que são retornados pelo balance do seu backend.
+- Clone project > enter the project folder
+- run `yarn`
+- run `yarn start`
 
-* **`should be able to list the transactions`**: Para que esse teste passe, sua aplicação deve permitir que sejam listados dentro de uma tabela, toda as transações que são retornadas do seu backend.
+## License
 
-- **`should be able to navigate to the import page`**: Para que esse teste passe, você deve permitir a troca de página através do Header, pelo botão que contém o nome `Importar`.
-
-- **`should be able to upload a file`**: Para que esse teste passe, você deve permitir que um arquivo seja enviado através do componente de drag-n-drop na página de `import`, e que seja possível exibir o nome do arquivo enviado para o input.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
 
 ---
 
-Feito com 💜 by me
+Created with passion by me 👨🏻‍💻
